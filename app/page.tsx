@@ -1,13 +1,33 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import Image from 'next/image'
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('about')
+
+  const handleScroll = () => {
+    const sections = ['about', 'projects']
+    for (const section of sections) {
+      const element = document.getElementById(section)
+      if (element) {
+        const rect = element.getBoundingClientRect()
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          setActiveSection(section)
+          break
+        }
+      }
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen text-gray-100">
@@ -123,9 +143,11 @@ export default function Portfolio() {
               <div className="flex flex-col justify-between">
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/campaignvista.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/campaignvista.png"
                       alt="CampaignVista preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -160,9 +182,11 @@ export default function Portfolio() {
               <div className="flex flex-col justify-between">
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/engage.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/engage.png"
                       alt="Engage preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -202,9 +226,11 @@ export default function Portfolio() {
                 
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/notesmith.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/notesmith.png"
                       alt="NoteSmith preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -244,9 +270,11 @@ export default function Portfolio() {
                 
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/blockmate.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/blockmate.png"
                       alt="BlockMate preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -287,9 +315,11 @@ export default function Portfolio() {
                 
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/sentiment.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/sentiment.png"
                       alt="Sentiment Classifier preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -326,9 +356,11 @@ export default function Portfolio() {
                 
                 <div className="mb-4">
                   <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
-                    <img 
-                      src="/snaps/finetuning.png?height=150&width=250" 
+                    <Image 
+                      src="/snaps/finetuning.png"
                       alt="Finetuning preview"
+                      width={250}
+                      height={150}
                       className="h-full w-full object-cover"
                     />
                   </div>
