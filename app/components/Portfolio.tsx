@@ -158,7 +158,7 @@ export default function Portfolio() {
                     <div className="mb-4">
                       <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
                         <Image 
-                          src="/snaps/campaignvista.png"
+                          src="/snaps/campaignvista.PNG"
                           alt="CampaignVista preview"
                           width={1920}
                           height={1080}
@@ -203,7 +203,7 @@ export default function Portfolio() {
                     <div className="mb-4">
                       <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
                         <Image 
-                          src="/snaps/engage.png"
+                          src="/snaps/engage.PNG"
                           alt="Engage preview"
                           width={1920}
                           height={1080}
@@ -253,7 +253,7 @@ export default function Portfolio() {
                     <div className="mb-4">
                       <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
                         <Image 
-                          src="/snaps/notesmith.png"
+                          src="/snaps/notesmith.PNG"
                           alt="NoteSmith preview"
                           width={1920}
                           height={1080}
@@ -303,7 +303,7 @@ export default function Portfolio() {
                     <div className="mb-4">
                       <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
                         <Image 
-                          src="/snaps/blockmate.png"
+                          src="/snaps/blockmate.PNG"
                           alt="BlockMate preview"
                           width={1920}
                           height={1080}
@@ -399,7 +399,7 @@ export default function Portfolio() {
                     <div className="mb-4">
                       <div className="aspect-video rounded-lg bg-gray-100/50 overflow-hidden">
                         <Image 
-                          src="/snaps/finetuning.png"
+                          src="/snaps/finetuning.PNG"
                           alt="Finetuning preview"
                           width={1920}
                           height={1080}
