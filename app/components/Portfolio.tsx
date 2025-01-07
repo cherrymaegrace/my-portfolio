@@ -54,7 +54,7 @@ export default function Portfolio() {
         <aside className="lg:fixed lg:flex lg:h-screen lg:w-[45vw] flex-col justify-between p-6 lg:pt-24 lg:px-12">
           <div className="lg:w-[80%] lg:pl-72 space-y-12 lg:space-y-16">
             <div>
-              <h1 className="text-4xl lg:text-4xl font-bold text-[#80091B]">Cherry Caracas.</h1>
+              <h1 className="text-4xl lg:text-4xl font-bold text-[#80091B]">Cherry Caracas</h1>
               <h4 className="text-xl lg:text-xl font-semibold text-gray-800 mt-2">AI Engineer</h4>
               <p className="text-base mt-4"></p>
               <Button 
@@ -66,7 +66,7 @@ export default function Portfolio() {
               </Button>
             </div>
   
-            <nav className="space-y-4">
+            <nav className="space-y-4 hidden lg:block">
               {['about', 'projects'].map((section) => (
                 <div key={section} className="group">
                   <a
@@ -117,8 +117,8 @@ export default function Portfolio() {
         {/* Main Content */}
         <main className="flex-1 p-6 lg:pt-24 lg:px-12 lg:pr-60 lg:w-[55vw] lg:ml-[45vw]">
           {/* About Section */}
-          <section id="about" className="mb-24 lg:mb-36 lg:pr-32">
-            <h2 className="mb-8 text-xl font-bold text-[#80091B] lg:hidden">ABOUT.</h2>
+          <section id="about" className="mb-20 lg:mb-36 lg:pr-32">
+            <h2 className="mb-8 text-lg font-bold text-[#80091B] lg:hidden">ABOUT</h2>
             <div className="max-w-2xl space-y-4 lg:space-y-6 text-sm lg:text-lg text-gray-600">
               <p className="text-base">
               I am a developer with hands-on experience <b className="text-[#80091B]">integrating AI into applications</b> to address real-world challenges.
@@ -140,7 +140,7 @@ export default function Portfolio() {
   
           {/* Projects Section */}
           <section id="projects" className="mb-24 lg:mb-36 lg:pr-32" suppressHydrationWarning>
-            <h2 className="mb-8 text-xl font-bold text-[#80091B] lg:hidden">PROJECTS.</h2>
+            <h2 className="mb-8 text-lg font-bold text-[#80091B] lg:hidden">PROJECTS</h2>
             <div className="space-y-12">
   
             {/* CampaignVista Card */}
@@ -176,7 +176,8 @@ export default function Portfolio() {
                         </span>
                       </div>
                       <p className="text-sm lg:text-sm text-gray-600 mb-4">
-                        CampaignVista is an AI-powered marketing analytics tool that helps businesses optimize their digital marketing campaigns through advanced data analysis and intelligent recommendations.
+                      CampaignVista is an AI-powered marketing analytics tool designed to help businesses optimize digital marketing campaigns through intelligent data analysis and actionable recommendations.
+                      It utilizes an <b className="text-[#80091B]">agentic AI framework</b> powered by OpenAI’s Swarm, with three specialized agents: Performance Evaluation, which analyzes traffic sources and campaign metrics; Trend Analysis, which detects patterns and anomalies in campaign performance over time; and Smart Recommendations, which delivers AI-driven suggestions for campaign optimization and budget allocation.
                       </p>
                     </div>
   
@@ -221,7 +222,7 @@ export default function Portfolio() {
                         </span>
                       </div>
                       <p className="text-sm lg:text-sm text-gray-600 mb-4">
-                        ENGAGE is a sophisticated email marketing tool that leverages Retrieval-Augmented Generation (RAG) and AI to create highly personalized email campaigns.
+                        ENGAGE is a sophisticated email marketing tool that leverages <b className="text-[#80091B]">Retrieval-Augmented Generation (RAG)</b> and AI to create highly personalized email campaigns.
                         The application combines customer segmentation data with purchase behavior to generate targeted, engaging email content for various marketing scenarios.
                       </p>
                     </div>
@@ -271,7 +272,7 @@ export default function Portfolio() {
                         </span>
                       </div>
                       <p className="text-sm lg:text-sm text-gray-600 mb-4">
-                        NoteSmith is an intelligent study assistant built on Streamlit that leverages OpenAI's powerful GPT models through their API.
+                        NoteSmith is an intelligent study assistant built on Streamlit that leverages <b className="text-[#80091B]">OpenAI's powerful GPT</b> models through their API.
                         This chatbot analyzes uploaded PDF files, creates customized Q&As, and summarizes topics based on the content of the PDF.
                         Using OpenAI's advanced natural language processing capabilities, it can understand context, generate relevant questions, and provide detailed explanations tailored to the study material.
                       </p>
@@ -321,7 +322,7 @@ export default function Portfolio() {
                         </span>
                       </div>
                       <p className="text-sm lg:text-sm text-gray-600 mb-4">
-                        BlockMate is an intelligent foam block inventory assistant powered by AI that helps warehouse managers and operators track, manage, and optimize their foam inventory in real-time.
+                        BlockMate is an intelligent foam block inventory assistant powered by AI that helps warehouse managers and operators track, manage, and optimize their foam inventory in real-time. BlockMate integrates a chatbot powered by <b className="text-[#80091B]">Retrieval-Augmented Generation (RAG)</b>, using foam inventory data as its knowledge base. 
                       </p>
                     </div>
   
