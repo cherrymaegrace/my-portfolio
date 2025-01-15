@@ -444,6 +444,11 @@ export default function Portfolio() {
   
             </div>
           </section>
+
+          <div>
+            <p  className='text-sm'>Projects created during <a href="https://www.airepublics.org/bootcamp" className='text-[#80091B]'>AI Republic's AI Engineering Course - Winter 2024</a></p>
+            <p className='text-sm'>Potfolio design heavily inspired by <a href="https://brittanychiang.com/" className='text-[#80091B]'>Brittany Chiang</a></p>
+          </div>
   
         </main>
       </div>
